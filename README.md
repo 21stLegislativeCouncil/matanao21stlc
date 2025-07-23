@@ -6,19 +6,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   
     body {
-      background: url('logo.png') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
     }
 
     header {
-      background: linear-gradient(rgba(33, 150, 243, 0.8), rgba(67, 160, 71, 0.8)), url('logo.png') no-repeat center center;
+      background: linear-gradient(rgba(33, 150, 243, 0.85), rgba(67, 160, 71, 0.85)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
       background-size: cover;
     }
 </head>
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>Pag-alagad sa Katawhan, Pagpanalipod sa Kalibotan</p>
+    <p>Governance with Grit, WOW Matanao to the NEXT LEVEL</p>
   </header>
 
   <nav>
