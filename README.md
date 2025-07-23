@@ -15,23 +15,26 @@
     }
 
     body {
-      background-color: #fff9f3;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
 
     header {
-      background-color: #8B0000;
+      background-color: rgba(0, 100, 0, 0.8);
       color: white;
       padding: 20px;
       text-align: center;
+      backdrop-filter: blur(4px);
     }
 
     nav {
       display: flex;
       justify-content: center;
-      background-color: #FF8C00;
+      background-color: rgba(34, 139, 34, 0.8);
       padding: 10px;
       gap: 20px;
+      backdrop-filter: blur(4px);
     }
 
     nav a {
@@ -40,25 +43,25 @@
       font-weight: bold;
       padding: 8px 16px;
       border-radius: 20px;
-      background-color: #b33a00;
+      background-color: rgba(0, 128, 0, 0.9);
       transition: background 0.3s;
     }
 
     nav a:hover {
-      background-color: #cc5500;
+      background-color: rgba(0, 100, 0, 0.9);
     }
 
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      margin-top: 30px;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
-    }
-
-    section:nth-child(even) {
-      background-color: #fff2e6;
+      color: #f0f0f0;
     }
 
     @keyframes fadeInUp {
@@ -70,14 +73,14 @@
 
     h2 {
       margin-bottom: 20px;
-      color: #8B0000;
+      color: #90ee90;
     }
 
     .file-btn {
       display: inline-block;
       margin: 10px 10px 0 0;
       padding: 10px 20px;
-      background-color: #FF8C00;
+      background-color: rgba(60, 179, 113, 0.9);
       color: white;
       border: none;
       border-radius: 20px;
@@ -86,7 +89,7 @@
     }
 
     .file-btn:hover {
-      background-color: #cc5500;
+      background-color: rgba(46, 139, 87, 0.9);
     }
   </style>
 </head>
