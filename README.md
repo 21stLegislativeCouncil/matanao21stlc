@@ -1,118 +1,21 @@
-<!DOCTYPE html>
 <html lang="ceb">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matanao 21st Legislative Council</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+  
+    #ordinanceReso {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      opacity: 0;
     }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      animation: fadeIn 2s ease-in;
+    #ordinanceReso.show {
+      max-height: 1000px;
+      opacity: 1;
     }
-    header {
-      background: linear-gradient(135deg, #ff6f00, #f57c00);
-      padding: 3rem 1rem;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background: #0d47a1;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0.5rem 1rem;
-      font-weight: bold;
-      transition: transform 0.2s, background-color 0.3s;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
-    nav a:hover {
-      background-color: #ff7043;
-      transform: scale(1.1);
-    }
-    section {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ffcc80;
-      padding-bottom: 0.5rem;
-    }
-    .card {
-      background: #ffffff10;
-      border: 1px solid #ffffff33;
-      border-left: 5px solid orange;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-    .card p {
-      color: #e0e0e0;
-    }
-    .button {
-      display: inline-block;
-      background-color: #ff9800;
-      color: #fff;
-      padding: 0.5rem 1.2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background-color: #f57c00;
-    }
-    footer {
-      background: #0d47a1;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-    }
-    footer a {
-      color: #ffcc80;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-    footer p {
-      margin-top: 1rem;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+</style>
 </head>
 <body>
   <header>
@@ -171,8 +74,17 @@
 <script>
 function toggleOrdinanceReso() {
   const section = document.getElementById('ordinanceReso');
-  section.style.display = section.style.display === 'none' ? 'block' : 'none';
+  if (section.style.display === 'none') {
+    section.style.display = 'block';
+    section.style.maxHeight = section.scrollHeight + 'px';
+    section.style.opacity = 1;
+  } else {
+    section.style.maxHeight = '0';
+    section.style.opacity = 0;
+    setTimeout(() => section.style.display = 'none', 300);
+  }
 }
 </script>
 
 </html>
+
