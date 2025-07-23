@@ -8,8 +8,26 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom right, #fff7f0, #ffe6d9);
       color: #333;
+      background: url('https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 247, 240, 0.95);
+      z-index: 0;
+    }
+
+    * {
+      position: relative;
+      z-index: 1;
     }
 
     header {
