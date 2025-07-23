@@ -8,20 +8,28 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #fff;
+      background: linear-gradient(to bottom right, #fff7f0, #ffe6d9);
       color: #333;
+    }
 
     header {
       background: linear-gradient(135deg, maroon, darkorange);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
       font-family: 'Merriweather', serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border-bottom: 5px solid orange;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.3rem;
     }
 
     nav {
@@ -29,60 +37,91 @@
       justify-content: center;
       background-color: maroon;
       flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     nav a {
       color: white;
-      padding: 1rem;
+      padding: 1rem 2rem;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
+      font-size: 1.1rem;
+      transition: background 0.3s, transform 0.2s;
     }
 
     nav a:hover {
       background-color: darkorange;
+      transform: scale(1.05);
     }
 
     section {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 3rem 2rem;
+      max-width: 1000px;
       margin: auto;
     }
 
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: maroon;
+    }
+
     .card {
-      background-color: #fff7f0;
-      border-left: 8px solid darkorange;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      background-color: #fff;
+      border-left: 10px solid darkorange;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: maroon;
     }
 
     .button {
       background-color: darkorange;
       color: white;
       border: none;
-      padding: 0.6rem 1.2rem;
+      padding: 0.7rem 1.4rem;
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
-      border-radius: 25px;
+      border-radius: 30px;
       text-decoration: none;
       display: inline-block;
       margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: maroon;
+      transform: scale(1.05);
     }
 
     footer {
       background-color: maroon;
       color: white;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+      border-top: 5px solid orange;
     }
+  </style>
+</head>
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>MATANAO TO THE NEXT LEVEL!</p>
+    <p>Pag-alagad sa Katawhan, Pagpanalipod sa Kultura</p>
   </header>
 
   <nav>
