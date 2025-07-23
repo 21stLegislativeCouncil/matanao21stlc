@@ -9,54 +9,41 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: #333;
-      background: url('https://media.giphy.com/media/kHZ3O9obY2laI/giphy.gif') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
+      background: linear-gradient(to bottom, #e0f7fa, #e8f5e9);
+      animation: gradientShift 30s ease infinite;
     }
 
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 247, 240, 0.92);
-      z-index: 0;
-    }
-
-    * {
-      position: relative;
-      z-index: 1;
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
-      background: url('https://media.giphy.com/media/xT9IgpVvxN0kTz3F3G/giphy.gif') no-repeat center center;
-      background-size: cover;
+      background: linear-gradient(to right, #2196f3, #43a047);
       color: white;
       padding: 4rem 1rem;
       text-align: center;
       font-family: 'Merriweather', serif;
       box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      border-bottom: 5px solid orange;
     }
 
     header h1 {
       margin: 0;
-      font-size: 3.2rem;
-      text-shadow: 2px 2px 6px #000;
+      font-size: 3rem;
+      animation: slideIn 1.2s ease-out;
     }
 
     header p {
       font-style: italic;
       font-size: 1.4rem;
-      text-shadow: 1px 1px 4px #000;
+      animation: fadeIn 2s ease-in;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      background-color: maroon;
+      background-color: #00796b;
       flex-wrap: wrap;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
@@ -71,7 +58,7 @@
     }
 
     nav a:hover {
-      background-color: darkorange;
+      background-color: orange;
       transform: scale(1.05);
     }
 
@@ -85,30 +72,31 @@
       text-align: center;
       font-size: 2rem;
       margin-bottom: 2rem;
-      color: maroon;
+      color: #00796b;
     }
 
     .card {
-      background-color: #fff;
-      border-left: 10px solid darkorange;
+      background-color: #ffffff;
+      border-left: 10px solid orange;
       padding: 1.5rem 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 10px;
-      transition: transform 0.3s;
+      transition: transform 0.3s, background-color 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: scale(1.02);
+      background-color: #f1f8e9;
     }
 
     .card h3 {
       margin-top: 0;
-      color: maroon;
+      color: #1b5e20;
     }
 
     .button {
-      background-color: darkorange;
+      background-color: orange;
       color: white;
       border: none;
       padding: 0.7rem 1.4rem;
@@ -124,25 +112,34 @@
     }
 
     .button:hover {
-      background-color: maroon;
+      background-color: #00796b;
       transform: scale(1.05);
     }
 
     footer {
-      background-color: maroon;
+      background-color: #00796b;
       color: white;
       text-align: center;
       padding: 1.5rem;
       font-size: 0.95rem;
       margin-top: 3rem;
-      border-top: 5px solid orange;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>Pag-alagad sa Katawhan, Pagpanalipod sa Kultura</p>
+    <p>Pag-alagad sa Katawhan, Pagpanalipod sa Kalibotan</p>
   </header>
 
   <nav>
@@ -154,13 +151,14 @@
   <section id="balita">
     <h2>📰 Balita</h2>
     <div class="card">
-      <h3>Indigenous Celebration sa Matanao</h3>
-      <p>Gisaulog sa konseho ang kultura sa mga lumad pinaagi sa usa ka makalingaw nga kalihokan nga gipahigayon sa town plaza.</p>
-      <a href="news/celebration-july2025.pdf" class="button" download>Basaha ang Balita</a>
+      <h3>Celebrasyon sa Kalikupan</h3>
+      <p>Gipasiugdahan sa konseho ang aktibidad nga nagpanalipod sa suba ug kalasangan sa Matanao.</p>
+      <a href="news/eco-celebration.pdf" class="button" download>Basaha ang Balita</a>
     </div>
   </section>
 
-  
+  <section id="ordinansa">
+    <h2>📜 Mga Ordinansa</h2>
     <div class="card">
       <h3>Ordinansa No. 2025-04</h3>
       <p>Pre-registration list alang sa Theoretical Driving Course (TDC) sa LGU Matanao.</p>
@@ -178,7 +176,8 @@
     </div>
   </section>
 
-  
+  <section id="resolusyon">
+    <h2>📄 Mga Resolusyon</h2>
     <div class="card">
       <h3>Resolusyon No. 2025-R07</h3>
       <p>Lista sa mga partisipante sa Pre-Registration sa TDC sa LGU Matanao.</p>
@@ -197,7 +196,8 @@
   </section>
 
   <footer>
-    &copy; 2025 Konseho Panlalawigan sa Matanao | Gitukod alang sa serbisyo ug kultura.
+    &copy; 2025 Konseho Panlalawigan sa Matanao | Gitukod alang sa serbisyo ug kalikupan.
   </footer>
 </body>
 </html>
+
