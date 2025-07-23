@@ -195,9 +195,11 @@
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 Konseho Panlalawigan sa Matanao | Gitukod alang sa serbisyo ug kalikupan.
+    <div style="margin-top: 1rem;">
+      <p><strong>Kontak:</strong> 0912 345 6789</p>
+      <a href="https://www.facebook.com/matanaolegislativecouncil" target="_blank" style="margin-right: 10px; color: white; text-decoration: underline;">Facebook</a>
+      <a href="https://m.me/matanaolegislativecouncil" target="_blank" style="color: white; text-decoration: underline;">Messenger</a>
+    </div>
   </footer>
 </body>
 </html>
-
