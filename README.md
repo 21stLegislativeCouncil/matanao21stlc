@@ -1,80 +1,183 @@
+<!DOCTYPE html>
 <html lang="ceb">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matanao 21st Legislative Council</title>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-  
-
-    header {
-      background: linear-gradient(rgba(33, 150, 243, 0.85), rgba(67, 160, 71, 0.85)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      animation: fadeIn 2s ease-in;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6f00, #f57c00);
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #0d47a1;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      transition: transform 0.2s, background-color 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #ff7043;
+      transform: scale(1.1);
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffcc80;
+      padding-bottom: 0.5rem;
+    }
+    .card {
+      background: #ffffff10;
+      border: 1px solid #ffffff33;
+      border-left: 5px solid orange;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #e0e0e0;
+    }
+    .button {
+      display: inline-block;
+      background-color: #ff9800;
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #f57c00;
+    }
+    footer {
+      background: #0d47a1;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    footer p {
+      margin-top: 1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>Governance with Grit, WOW Matanao to the NEXT LEVEL</p>
+    <p>Transparency • Legislation • Service</p>
   </header>
 
   <nav>
-    <a href="#balita">📰 Balita</a>
-    <a href="#ordinansa">📜 Mga Ordinansa</a>
-    <a href="#resolusyon">📄 Mga Resolusyon</a>
+    <a href="#balita">📰 News</a>
+    <a href="#ordinansa">📜 Ordinances</a>
+    <a href="#resolusyon">📄 Resolutions</a>
+    <a href="#trivia">❓ Trivia</a>
+    <a href="#info">📢 Info & Announcements</a>
   </nav>
 
   <section id="balita">
-    <h2>📰 Balita</h2>
+    <h2>📰 Latest News</h2>
     <div class="card">
-      <h3>Celebrasyon sa Kalikupan</h3>
-      <p>Gipasiugdahan sa konseho ang aktibidad nga nagpanalipod sa suba ug kalasangan sa Matanao.</p>
-      <a href="news/eco-celebration.pdf" class="button" download>Basaha ang Balita</a>
+      <h3>Green Governance Initiative Launched</h3>
+      <p>The council launched an environmental sustainability plan including green zoning ordinances.</p>
+      <a href="#" class="button">Read More</a>
     </div>
   </section>
 
   <section id="ordinansa">
-    <h2>📜 Mga Ordinansa</h2>
+    <h2>📜 Municipal Ordinances</h2>
     <div class="card">
-      <h3>Ordinansa No. 2025-04</h3>
-      <p>Pre-registration list alang sa Theoretical Driving Course (TDC) sa LGU Matanao.</p>
-      <a href="ordinances/LGU-Matanao-Pre-reg-TDC.pdf" class="button" download>I-download Ordinansa</a>
-    </div>
-    <div class="card">
-      <h3>Ordinansa No. 2025-02</h3>
-      <p>Pagpanalipod sa mga tradisyonal nga teritoryo ug yutang kabilin sa mga lumad.</p>
-      <a href="ordinances/2025-02.pdf" class="button" download>I-download Ordinansa</a>
-    </div>
-    <div class="card">
-      <h3>Ordinansa No. 2025-03</h3>
-      <p>Paghatag og subsidiya alang sa Indigenous People Education Program.</p>
-      <a href="ordinances/2025-03.pdf" class="button" download>I-download Ordinansa</a>
+      <h3>Ordinance No. 2025-05</h3>
+      <p>Plastic ban policy implementation across Matanao markets and schools.</p>
+      <a href="#" class="button">Download Ordinance</a>
     </div>
   </section>
 
   <section id="resolusyon">
-    <h2>📄 Mga Resolusyon</h2>
+    <h2>📄 Resolutions</h2>
     <div class="card">
-      <h3>Resolusyon No. 2025-R07</h3>
-      <p>Lista sa mga partisipante sa Pre-Registration sa TDC sa LGU Matanao.</p>
-      <a href="resolutions/LGU-Matanao-Pre-reg-TDC.pdf" class="button" download>I-download Resolusyon</a>
-    </div>
-    <div class="card">
-      <h3>Resolusyon No. 2025-R05</h3>
-      <p>Pagduso sa pagsaulog sa Indigenous Peoples Month matag Oktubre.</p>
-      <a href="resolutions/2025-R05.pdf" class="button" download>I-download Resolusyon</a>
-    </div>
-    <div class="card">
-      <h3>Resolusyon No. 2025-R06</h3>
-      <p>Pagdaug sa Matanao sa regional award sa cultural governance.</p>
-      <a href="resolutions/2025-R06.pdf" class="button" download>I-download Resolusyon</a>
+      <h3>Resolution No. 2025-R08</h3>
+      <p>Declaring October as Matanao Cultural Heritage Month.</p>
+      <a href="#" class="button">Download Resolution</a>
     </div>
   </section>
 
-    <div style="margin-top: 1rem;">
-      <p><strong>Kontak:</strong> 0912 345 6789</p>
-      <a href="https://www.facebook.com/matanaolegislativecouncil" target="_blank" style="margin-right: 10px; color: white; text-decoration: underline;">Facebook</a>
-      <a href="https://m.me/matanaolegislativecouncil" target="_blank" style="color: white; text-decoration: underline;">Messenger</a>
+  <section id="trivia">
+    <h2>❓ Did You Know?</h2>
+    <div class="card">
+      <h3>Matanao Name Origin</h3>
+      <p>“Matanao” came from the word “tan-aw,” meaning “to look or view” — given by native Bagobos who watched from the hills.</p>
     </div>
+  </section>
+
+  <section id="info">
+    <h2>📢 Information & Announcements</h2>
+    <div class="card">
+      <h3>Public Hearing – August 15, 2025</h3>
+      <p>All stakeholders are invited to join the discussion on the upcoming zoning code revision at the municipal hall.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="https://www.facebook.com/matanaolegislativecouncil" target="_blank">Facebook</a>
+      <a href="https://m.me/matanaolegislativecouncil" target="_blank">Messenger</a>
+    </div>
+    <p><strong>Contact:</strong> 0912 345 6789</p>
+    <p>&copy; 2025 Matanao 21st Legislative Council. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
