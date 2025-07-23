@@ -1,96 +1,132 @@
+<!DOCTYPE html>
 <html lang="ceb">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matanao 21st Legislative Council</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
-    #ordinanceReso {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s ease;
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff9f3;
+      color: #333;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #FF8C00;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background-color: #b33a00;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #cc5500;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
       opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
     }
-    #ordinanceReso.show {
-      max-height: 1000px;
-      opacity: 1;
+
+    section:nth-child(even) {
+      background-color: #fff2e6;
     }
-</style>
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #8B0000;
+    }
+
+    .file-btn {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background-color: #FF8C00;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .file-btn:hover {
+      background-color: #cc5500;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>Transparency • Legislation • Service</p>
+    <p>Transparency | Governance | Development</p>
   </header>
 
   <nav>
-    <a href="#balita">📰 News</a>
-    <a href="#ordinansa">📜 Ordinances</a>
-    <a href="#resolusyon">📄 Resolutions</a>
-    <a href="#trivia">❓ Trivia</a>
-    <a href="#info">📢 Info & Announcements</a>
-  
-  <div style="text-align: center; margin: 2rem;">
-    <button onclick="toggleOrdinanceReso()" style="background-color:#ff9800;color:white;padding:0.8rem 2rem;font-size:1rem;border:none;border-radius:30px;cursor:pointer;">📂 Show Ordinances & Resolutions</button>
-  </div>
+    <a href="#news">News</a>
+    <a href="#ordinances">Ordinances</a>
+    <a href="#resolutions">Resolutions</a>
+    <a href="#trivia">Trivia</a>
+  </nav>
 
-  <section id="balita">
-    <h2>📰 Latest News</h2>
-    <div class="card">
-      <h3>Green Governance Initiative Launched</h3>
-      <p>The council launched an environmental sustainability plan including green zoning ordinances.</p>
-      <a href="#" class="button">Read More</a>
-    </div>
+  <section id="news">
+    <h2>📢 Latest News & Updates</h2>
+    <p>- July 2025: New resolution passed to improve local health services.</p>
+    <p>- June 2025: Matanao Council launched digital transparency portal.</p>
   </section>
 
-  
-    <section id="ordinansa">
-      <h2>📜 Municipal Ordinances</h2>
-      <div class="card">
-        <h3>Ordinance No. 2025-06</h3>
-        <p>Guide on Candle and Breakout Patterns — Technical cheat sheet for educational ordinance integration.</p>
-        <a href="temp/CandleandBreakoutPatternCheatSheetGuide.pdf" class="button" download>Download Ordinance</a>
-      </div>
-    </section>
-</div>
+  <section id="ordinances">
+    <h2>📄 Ordinances</h2>
+    <a class="file-btn" href="files/ordinance-001.pdf" target="_blank">Download Ordinance 001</a>
+    <a class="file-btn" href="files/ordinance-002.pdf" target="_blank">Download Ordinance 002</a>
+  </section>
+
+  <section id="resolutions">
+    <h2>📘 Resolutions</h2>
+    <a class="file-btn" href="files/resolution-001.pdf" target="_blank">Download Resolution 001</a>
+    <a class="file-btn" href="files/resolution-002.pdf" target="_blank">Download Resolution 002</a>
+  </section>
 
   <section id="trivia">
-    <h2>❓ Did You Know?</h2>
-    <div class="card">
-      <h3>Matanao Name Origin</h3>
-      <p>“Matanao” came from the word “tan-aw,” meaning “to look or view” — given by native Bagobos who watched from the hills.</p>
-    </div>
+    <h2>🎉 Trivia & Information</h2>
+    <p>- Did you know? Matanao has passed over 100 ordinances since 2000!</p>
+    <p>- The 21st Council was formed in 2022 with 12 active members.</p>
   </section>
+</body>
 
-  <section id="info">
-    <h2>📢 Information & Announcements</h2>
-    <div class="card">
-      <h3>Public Hearing – August 15, 2025</h3>
-      <p>All stakeholders are invited to join the discussion on the upcoming zoning code revision at the municipal hall.</p>
-    </div>
-  </section>
-
-  <footer>
-    <div>
-      <a href="https://www.facebook.com/matanaolegislativecouncil" target="_blank">Facebook</a>
-      <a href="https://m.me/matanaolegislativecouncil" target="_blank">Messenger</a>
-    </div>
-    <p><strong>Contact:</strong> 0912 345 6789</p>
-    <p>&copy; 2025 Matanao 21st Legislative Council. All Rights Reserved.</p>
-  </footer>
-<script>
-function toggleOrdinanceReso() {
-  const section = document.getElementById('ordinanceReso');
-  if (section.style.display === 'none') {
-    section.style.display = 'block';
-    section.style.maxHeight = section.scrollHeight + 'px';
-    section.style.opacity = 1;
-  } else {
-    section.style.maxHeight = '0';
-    section.style.opacity = 0;
-    setTimeout(() => section.style.display = 'none', 300);
-  }
-}
-</script>
-
 </html>
