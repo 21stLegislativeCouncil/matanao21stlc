@@ -81,12 +81,10 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
-  </style>
-</head>
 <body>
   <header>
     <h1>Matanao 21st Legislative Council</h1>
-    <p>Pag-alagad sa Katawhan, Pagpanalipod sa Kultura</p>
+    <p>MATANAO TO THE NEXT LEVEL!</p>
   </header>
 
   <nav>
