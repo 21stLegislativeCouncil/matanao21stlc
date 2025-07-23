@@ -4,137 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matanao 21st Legislative Council</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-  <style>
+  
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      color: #333;
-      background: linear-gradient(to bottom, #e0f7fa, #e8f5e9);
-      animation: gradientShift 30s ease infinite;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: cover;
     }
 
     header {
-      background: linear-gradient(to right, #2196f3, #43a047);
-      color: white;
-      padding: 4rem 1rem;
-      text-align: center;
-      font-family: 'Merriweather', serif;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      background: linear-gradient(rgba(33, 150, 243, 0.8), rgba(67, 160, 71, 0.8)), url('logo.png') no-repeat center center;
+      background-size: cover;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      animation: slideIn 1.2s ease-out;
-    }
-
-    header p {
-      font-style: italic;
-      font-size: 1.4rem;
-      animation: fadeIn 2s ease-in;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #00796b;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    nav a {
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    nav a:hover {
-      background-color: orange;
-      transform: scale(1.05);
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #00796b;
-    }
-
-    .card {
-      background-color: #ffffff;
-      border-left: 10px solid orange;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      transition: transform 0.3s, background-color 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
-      background-color: #f1f8e9;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #1b5e20;
-    }
-
-    .button {
-      background-color: orange;
-      color: white;
-      border: none;
-      padding: 0.7rem 1.4rem;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 30px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .button:hover {
-      background-color: #00796b;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background-color: #00796b;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.95rem;
-      margin-top: 3rem;
-    }
-
-    @keyframes slideIn {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
 </head>
 <body>
   <header>
