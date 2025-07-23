@@ -110,7 +110,7 @@
   <section id="news">
     <h2>📢 Latest News & Updates</h2>
     <p>- July 22, 2025:Visitors from Zamboanga del Sur Visits the Municipality of Matanao for Their 3 day benchmarking!.</p>
-    <img src="images/ZAMBOANGA BENCHMARKING.jpg" alt="Health Services" style="width: 100%; border-radius: 10px;">
+    <img src="images/ZAMBOANGA BENCHMARKING.jpg" alt="image/ZAMBOANGA BENCHMARKING.jpg" style="width: 100%; border-radius: 10px;">
 
     <p>- June 2025: Matanao Council launched digital transparency portal.</p>
   </section>
