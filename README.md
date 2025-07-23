@@ -43,8 +43,15 @@
     </div>
   </section>
 
-  <div id="ordinanceReso" style="display: none;">
-
+  
+    <section id="ordinansa">
+      <h2>📜 Municipal Ordinances</h2>
+      <div class="card">
+        <h3>Ordinance No. 2025-06</h3>
+        <p>Guide on Candle and Breakout Patterns — Technical cheat sheet for educational ordinance integration.</p>
+        <a href="temp/CandleandBreakoutPatternCheatSheetGuide.pdf" class="button" download>Download Ordinance</a>
+      </div>
+    </section>
 </div>
 
   <section id="trivia">
@@ -87,4 +94,3 @@ function toggleOrdinanceReso() {
 </script>
 
 </html>
-
