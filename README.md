@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: #333;
-      background: url('https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif') no-repeat center center fixed;
+      background: url('https://media.giphy.com/media/kHZ3O9obY2laI/giphy.gif') no-repeat center center fixed;
       background-size: cover;
       position: relative;
     }
@@ -21,7 +21,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(255, 247, 240, 0.95);
+      background: rgba(255, 247, 240, 0.92);
       z-index: 0;
     }
 
@@ -31,23 +31,26 @@
     }
 
     header {
-      background: linear-gradient(135deg, maroon, darkorange);
+      background: url('https://media.giphy.com/media/xT9IgpVvxN0kTz3F3G/giphy.gif') no-repeat center center;
+      background-size: cover;
       color: white;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       text-align: center;
       font-family: 'Merriweather', serif;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
       border-bottom: 5px solid orange;
     }
 
     header h1 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 3.2rem;
+      text-shadow: 2px 2px 6px #000;
     }
 
     header p {
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
+      text-shadow: 1px 1px 4px #000;
     }
 
     nav {
