@@ -126,7 +126,10 @@
     <a href="#resolusyon">📄 Resolutions</a>
     <a href="#trivia">❓ Trivia</a>
     <a href="#info">📢 Info & Announcements</a>
-  </nav>
+  
+  <div style="text-align: center; margin: 2rem;">
+    <button onclick="toggleOrdinanceReso()" style="background-color:#ff9800;color:white;padding:0.8rem 2rem;font-size:1rem;border:none;border-radius:30px;cursor:pointer;">📂 Show Ordinances & Resolutions</button>
+  </div>
 
   <section id="balita">
     <h2>📰 Latest News</h2>
@@ -137,23 +140,9 @@
     </div>
   </section>
 
-  <section id="ordinansa">
-    <h2>📜 Municipal Ordinances</h2>
-    <div class="card">
-      <h3>Ordinance No. 2025-05</h3>
-      <p>Plastic ban policy implementation across Matanao markets and schools.</p>
-      <a href="#" class="button">Download Ordinance</a>
-    </div>
-  </section>
-
-  <section id="resolusyon">
-    <h2>📄 Resolutions</h2>
-    <div class="card">
-      <h3>Resolution No. 2025-R08</h3>
-      <p>Declaring October as Matanao Cultural Heritage Month.</p>
-      <a href="#" class="button">Download Resolution</a>
-    </div>
-  </section>
+  <div id="ordinanceReso" style="display: none;">
+
+</div>
 
   <section id="trivia">
     <h2>❓ Did You Know?</h2>
@@ -179,5 +168,11 @@
     <p><strong>Contact:</strong> 0912 345 6789</p>
     <p>&copy; 2025 Matanao 21st Legislative Council. All Rights Reserved.</p>
   </footer>
-</body>
+<script>
+function toggleOrdinanceReso() {
+  const section = document.getElementById('ordinanceReso');
+  section.style.display = section.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
 </html>
