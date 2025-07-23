@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: #333;
-      background: url('https://www.google.com/imgres?q=river%20flowing%20gif&imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4f%2F82%2F50%2F4f825085db079eb7c0b699ac33c8f80f.gif&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fwaterfall-gifs--650207264928007122%2F&docid=PGHlBVlwIPOh5M&tbnid=YD4H2fuARsHbpM&vet=12ahUKEwiZi_fbtNKOAxXRh1YBHW9bG2AQM3oECBMQAA..i&w=800&h=308&hcb=2&ved=2ahUKEwiZi_fbtNKOAxXRh1YBHW9bG2AQM3oECBMQAA') no-repeat center center fixed;
+      background: url('https://media.giphy.com/media/kHZ3O9obY2laI/giphy.gif') no-repeat center center fixed;
       background-size: cover;
       position: relative;
     }
@@ -31,7 +31,7 @@
     }
 
     header {
-      background: url('https://www.google.com/imgres?q=river%20flowing%20gif&imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4f%2F82%2F50%2F4f825085db079eb7c0b699ac33c8f80f.gif&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fwaterfall-gifs--650207264928007122%2F&docid=PGHlBVlwIPOh5M&tbnid=YD4H2fuARsHbpM&vet=12ahUKEwiZi_fbtNKOAxXRh1YBHW9bG2AQM3oECBMQAA..i&w=800&h=308&hcb=2&ved=2ahUKEwiZi_fbtNKOAxXRh1YBHW9bG2AQM3oECBMQAA') no-repeat center center;
+      background: url('https://media.giphy.com/media/xT9IgpVvxN0kTz3F3G/giphy.gif') no-repeat center center;
       background-size: cover;
       color: white;
       padding: 4rem 1rem;
@@ -160,8 +160,12 @@
     </div>
   </section>
 
-  <section id="ordinansa">
-    <h2>📜 Mga Ordinansa</h2>
+  
+    <div class="card">
+      <h3>Ordinansa No. 2025-04</h3>
+      <p>Pre-registration list alang sa Theoretical Driving Course (TDC) sa LGU Matanao.</p>
+      <a href="ordinances/LGU-Matanao-Pre-reg-TDC.pdf" class="button" download>I-download Ordinansa</a>
+    </div>
     <div class="card">
       <h3>Ordinansa No. 2025-02</h3>
       <p>Pagpanalipod sa mga tradisyonal nga teritoryo ug yutang kabilin sa mga lumad.</p>
@@ -174,8 +178,12 @@
     </div>
   </section>
 
-  <section id="resolusyon">
-    <h2>📄 Mga Resolusyon</h2>
+  
+    <div class="card">
+      <h3>Resolusyon No. 2025-R07</h3>
+      <p>Lista sa mga partisipante sa Pre-Registration sa TDC sa LGU Matanao.</p>
+      <a href="resolutions/LGU-Matanao-Pre-reg-TDC.pdf" class="button" download>I-download Resolusyon</a>
+    </div>
     <div class="card">
       <h3>Resolusyon No. 2025-R05</h3>
       <p>Pagduso sa pagsaulog sa Indigenous Peoples Month matag Oktubre.</p>
